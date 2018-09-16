@@ -1,0 +1,66 @@
+      
+	    #set($layout="app_layout.vm")	
+		<div class="content">
+		  <div class="buttons-tab">
+		    <a href="#tab1" class="tab-link active button">完成订单</a>
+		    <a href="#tab2" class="tab-link button">失败订单</a>
+		  </div>
+		  <div class="content-block">
+		    <div class="tabs">
+
+		      <div id="tab1" class="tab active">
+				  
+				  <div class="content-block-title">总数${payments.size()}</div>
+				  #foreach($pay in $!payments) 
+				  <div class="list-block">
+				    <ul>
+				      <li class="item-content">
+				        <div class="item-media"><i class="icon icon-f7"></i></div>
+				        <div class="item-inner">
+				          <div class="item-title">id</div>
+				          <div class="item-after">${pay.id}</div>
+				        </div>
+				      </li>
+				      <li class="item-content">
+				        <div class="item-media"><i class="icon icon-f7"></i></div>
+				        <div class="item-inner">
+				          <div class="item-title">msatoshi</div>
+				          <div class="item-after">${pay.msatoshi}</div>
+				        </div>
+				      </li>
+				      
+				      
+				      <li class="item-content">
+				        <div class="item-media"><i class="icon icon-f7"></i></div>
+				        <div class="item-inner">
+				          <div class="item-title">实际支付msatoshi</div>
+				          <div class="item-after">${pay.msatoshi_sent}</div>
+				        </div>
+				      </li>				      
+				      
+				      <li class="item-content">
+				        <div class="item-media"><i class="icon icon-f7"></i></div>
+				        <div class="item-inner">
+				          <div class="item-title">destination</div>
+				          <div class="item-after">${pay.destination}</div>
+				        </div>
+				      </li>	
+				    </ul>
+				  </div>
+				  #end			        
+     
+		      </div>
+		      
+		      
+		      <div id="tab2" class="tab">
+		        <div class="content-block">
+		      
+		        </div>
+		      </div>		      
+		      
+		      
+		     
+		    </div>
+		  </div>
+		</div>	
+	

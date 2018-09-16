@@ -1,0 +1,154 @@
+<style type="text/css"> 
+ img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 96% !important;
+    padding: 1%
+  }
+  img {
+  vertical-align: middle;
+  }
+  
+	.img-rounded {
+	  border-radius: 3px;
+	}  
+</style>
+     <!-- Bootstrap theme -->
+     <link href="${contextPath}/css/bootstrap-theme.min.css" rel="stylesheet">	  
+	  
+    <div class="container theme-showcase" role="main">
+	      <div class="jumbotron">      
+	        <h2>闪电网络</h2>
+	        <p >Lightning: an open protocol layer that leverages the power of blockchains and smart contracts to make cheap, fast, private transactions available to anyone around the world.</p> 
+	        
+	        <h3>捐赠服务</h3>
+	        <p>下面是基于PaaS平台上开发的一个应用程序，比特币打赏:为我的内容来打赏吧(账号密码ln/hello2018)</p>
+	        #if($!session.getAttribute("uname"))
+	        	#if($balance)
+	        		<p>你在测试网络(testnet)钱包目前拥有<code>BTC:${balance}</code> 了解更多<a href="https://live.blockcypher.com/btc-testnet/" target="_blank">btc-testnet</a></p>
+	        	#end
+	        <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#exampleModal" >捐赠比特币</button> 
+	        #else
+	        <a class="btn btn-success btn-lg" href="/tologin" role="button">登录钱包打赏</a>
+	        #end        	        
+	  	      
+	        <h3>闪电钱包APP</h3>
+	        <p>基于闪电技术比特币钱包Beta(账号密码ln/hello2018)</p>	    
+	        <a class="btn btn-success btn-lg" href="https://service.dcloud.net.cn/build/download/f26b4890-543b-11e8-b185-9ddf8e1d5e9c" role="button">下载Android钱包</a>  <a class="btn btn-success btn-lg" href="https://service.dcloud.net.cn/build/download/807f2180-54de-11e8-a070-237f6338da57" role="button">下载IOS越狱钱包</a>      	        
+	      </div>	      
+	      
+	      <div class="jumbotron">      
+	        <h2>Lightning PaaS 架构</h2>
+	        <p>What is L PaaS：在区块链底层和应用层之间，提供了基础、高可用、可扩展的应用层API服务</p>
+	        <p><img src="/pic/paas.jpg"></p> 
+	      </div>
+	      	         	      
+	    <div class="alert alert-info" role="alert">
+		  <a href="#" class="alert-link">欢迎大家与我交流:laziobird@gmail.com</a>
+		</div>       
+     </div> 
+
+
+	<!-- Small modal -->
+	
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="exampleModalLabel">捐赠</h4>
+	        
+	      </div>
+	      <div class="modal-body">
+	        <form id="FormID">
+	          <div class="form-group">
+	            <label for="expiry" class="control-label">付款有效期(毫秒):</label>
+	            <input type="text" class="form-control" id="expiry" name="expiry" value="3600" required>
+	          </div>
+	          <div class="form-group">
+	            <label for="msatoshi" class="control-label">数量(Satoshi,1BTC = 10000000Satoshi):</label>
+	            <input type="text" class="form-control" id="msatoshi" name="msatoshi" value="1000" required>
+	          </div>	          
+	          <div class="form-group">
+	            <label for="description" class="control-label">交易备注:</label>
+	            <textarea class="form-control" id="description" name="description" required></textarea>
+	          </div>
+	        </form>
+   
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	        <button type="button" class="btn btn-primary" id="donate">捐赠</button>
+	      </div>
+	      
+	    </div>
+	  </div>
+	</div>
+
+
+
+	<!-- Small 2 modal -->
+	
+	<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">闪电钱包-商家收款码</h4>
+	      </div>
+	      <form id="FormID2" action="/topay" method="get">
+	      <div class="modal-body">        
+	        <div id="retext" class="form-group">   
+	        	<p class="text-success">闪电网络节点生成收款码,建议复制保存,可以一直重复支付</p>      
+	            <textarea class="form-control" id="bolt11" name="bolt11" rows="4" ></textarea>	          
+	        </div>
+			
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	        <button type="submit" class="btn btn-primary" id="donate2">下一步</button>
+	      </div>    
+	      </form>  
+	    </div>
+	  </div>
+	</div>
+
+	<script type="text/javascript">
+      $(function(){
+         $("#donate").click(function(){
+
+				var data=$('#FormID').serialize();
+				//序列化获得表单数据，结果为：user_id=12&user_name=John&user_age=20
+				
+				var submitData=decodeURIComponent(data,true);
+				//submitData是解码后的表单数据，结果同上
+			
+				$.ajax({
+				    url:'/invoice',
+				    data:submitData,
+				    cache:false,//false是不缓存，true为缓存
+				    async:true,//true为异步，false为同步
+				    type:"POST",
+				    beforeSend:function(){
+				        //请求前
+				    },
+				    success:function(result){
+				        //请求成功时
+				        $('#exampleModal').modal('hide')
+				        $("#bolt11").val(result);
+				        $("#exampleModal2").modal('show')				     		        
+				    },
+				    complete:function(){
+				        //请求结束时
+				    },
+				    error:function(){
+				        //请求失败时
+				    }
+				})            
+
+
+         });
+      });
+	</script>
+

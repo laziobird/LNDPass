@@ -1,0 +1,327 @@
+#set($layout="otclayout.vm")	
+
+<div class="container">
+
+    
+
+    
+  <div class="adlisting">
+    <div class="row">
+      <div class="col-md-12">
+
+
+        
+
+        <h1>用 Japanese Yen (JPY) 现金购买比特币</h1>
+
+        <p class="ad-description">
+
+  
+    
+    www.birdboy.cn 用户 <i>kansaibitcoiners</i>
+    希望出售比特币给您。
+    
+  
+
+</p>
+
+      </div>
+    </div>
+
+    
+    <div class="row">
+      <div class="col-md-6">
+        
+        
+
+        <div class="row">
+          <div class="col-md-4">
+            <h4>价格：</h4>
+          </div>
+          <div class="col-md-8">
+              <h4 class="price" id="ad_price">854,040.83 JPY / BTC</h4>
+          </div>
+        </div>
+        
+
+<div class="row">
+
+  <div class="col-md-4">
+    &nbsp;
+  </div>
+
+  <div class="col-md-8">
+    <p>浮动价格。最终的比特币金额将在交易完成时确定。</p>
+  </div>
+</div>
+
+
+
+        <div class="row">
+          <div class="col-md-4"><b>用户：</b></div>
+          <div class="col-md-8">
+            
+              <a class="profile-link" href="/accounts/profile/kansaibitcoiners/">
+                <span class="username">
+                  <i class="fa fa-user"></i>
+                  kansaibitcoiners
+                  
+                    
+
+
+
+
+  
+      <span title="用户 kansaibitcoiners 最后一次在线 1 天，4 小时 之前" class="online-status online-status-offline">
+          <i class="fa fa-circle"></i>
+      </span>
+  
+
+
+                  
+                </span>
+              </a>
+              <p>
+                <span class="see-profile">
+                  
+                    (用户评价得分 100 %,
+                    <a class="profile-link" href="/accounts/profile/kansaibitcoiners/">
+                      参见用户评价)
+                    </a>
+                  
+                </span>
+              </p>
+            
+          </div>
+        </div>
+
+        
+          <div class="row">
+            <div class="col-md-4"><b>交易限额：</b></div>
+            <div class="col-md-8"><p>500,000 - 2,000,000 JPY</p></div>
+          </div>
+        
+
+        <div class="row">
+          <div class="col-md-4"> <b>所在地：</b></div>
+          <div class="col-md-8">
+            
+
+              <p>
+                  <a href="/places/570808/beijing-cn/">Beijing, China</a>
+              </p>
+            
+
+<br>
+
+…或者查看
+<a href="/country/cn">其他城市在 China </a> 
+
+
+          </div>
+        </div>
+
+        
+
+        <div class="row">
+          <div class="col-md-12">
+            
+              
+                
+                  
+                    
+
+
+<div class="well" id="cactus-wrapper">
+
+  <h4>
+    您想买多少？
+  </h4>
+
+  <form class="form-inline ad-calculator-form-old" action="/ad/752007/zai-beijing-china-yong-xian-jin-gou-mai-bi-te-bi" method="POST" onsubmit="trade_button.disabled = true; return true;">
+  <input type='hidden' name='csrfmiddlewaretoken' value='lBUIwUCRGO2e6aBUmbZ8x52Q3I9vHd6U' />
+      <input id="id_price_equation" maxlength="500" name="price_equation" type="hidden" value="btcboxjpy * 1.07" />
+      <span class="formerror"></span>
+      <span class="formerror"></span>
+      <div id="amountdiv" class="row">
+        <div class="col-md-6 span amount">JPY<input autocomplete="off" class="form-control" id="amountinput" name="amount" placeholder="0.00" title="Remember to suggest trade sum amount between limit" type="text" /></div>
+        <div class="col-md-6 span btc">BTC<input class="form-control" id="btcinput" name="btcinput" type="text"/></div>
+      </div>
+
+      
+<div id="under_min_error" class="display-none amount-error-text">
+    您可以从此广告中购买的最小金额为 500000 JPY。
+</div>
+<div id="over_max_error" class="display-none amount-error-text">
+    您可以从此广告中购买的最大金额为 2000000 JPY。
+</div>
+
+
+      
+
+      
+
+      <span class="formerror"></span>
+      <div id="request-text-area-wrapper"><textarea class="form-control" cols="40" id="id_message" maxlength="300" name="message" placeholder="在这里给交易伙伴留下您的联系方式和其它一些信息…（可选）" rows="4">
+</textarea></div>
+      <button id="trade_request_button" class="btn btn-success" type="submit" name="trade_button" disabled>发送交易请求</button>
+      <div id="tradetypediv" class="row display-none">
+        <div class="col-md-6">交易类型：&nbsp;</div>
+      </div>
+
+      
+    </div>
+    <div class="panel-group" id="accordion-trade-quick-how-to" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-start-trade">
+          <h4 class="panel-title">
+            <a class="accordeon-link" data-toggle="collapse" data-parent="#accordion-start-trade" href="#collapse-start-trade" aria-expanded="true" aria-controls="collapse-start-trade">
+              <i class="fa fa-chevron-down"></i>&nbsp;如何开始联系交易者
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-start-trade" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-start-trade">
+          <div class="panel-body">
+            <p>
+              
+              阅读交易的条款并确保遵守这些条款。
+              使用此表格发送包含您希望交易的数量的交易请求。
+              打开交易请求后，可以在
+              LocalBitcoins.com 消息系统中与交易者讨论。
+              
+            </p>
+            <p>
+              
+              
+              正在进行的交易请求和消息收件箱可以在用户配置文件页面下的<a target="_blank" href="ads">仪表板</a>找到。您可以在那里发送和接收消息与交易者联系。
+              
+            </p>
+            <p>
+              
+              
+              更多信息，请参阅<a target="_blank" href="/guides/how-to-buy-bitcoins"><i class="fa fa-question"></i>快速购买指南</a>。
+              
+            </p>
+          </div>
+        </div>
+      </div>
+      
+
+
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-how-to-cancel">
+          <h4 class="panel-title">
+            <a class="accordeon-link" data-toggle="collapse" data-parent="#accordion-receive" href="#collapse-how-to-cancel" aria-expanded="false" aria-controls="collapse-how-to-cancel">
+              <i class="fa fa-chevron-down"></i>&nbsp;取消贸易中
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-how-to-cancel" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-how-to-cancel">
+          <div class="panel-body">
+            <p>
+              
+              
+              您可以在支付前取消交易。
+              在用户配置文件下的<a href="/ads" target="_blank">仪表板</a>中可以看到正在进行的交易。
+              
+            </p>
+          </div>
+        </div>
+      </div>
+  </form>
+</div>
+
+                  
+                
+              
+            
+
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        
+          
+            
+              <div class="row">
+                <div class="col-md-8">
+                  <h3>
+                    和用户 <i>kansaibitcoiners</i> 的交易条款
+                  </h3>
+                  <p class="messagetext">Meeting preferences: Osaka Japan<br /><br />When you are travelling into Osaka, Japan. I&#39;m the guy you want to meet.<br /><br />Will organize sellers in Osaka, so there will always be coins you can buy<br /><br />Please message me on telegram: faulkmore<br />09063070731<br /></p>
+                </div>
+              </div>
+            
+          
+
+          
+
+          
+            <div class="row">
+              <div class="col-md-6">
+                <div class="pull-right">
+                  <small>
+                    <a id="flag-ad" href="/support/ad/?ad_id=752007"
+                       title="向网站管理员举报不良交易广告">
+                        <i class="fa fa-flag"></i>
+                        举报这则交易广告
+                    </a>
+                  </small>
+                </div>
+              </div>
+            </div>
+          
+          
+        
+      </div>
+    </div>
+  </div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<!-- Tips and security info -->
+<div class="row" id="ad-tips">
+    
+        <div class="col-md-8">
+            <div id="transactionInfoDiv" class="well">
+
+                <h4><i class="fa fa-question"></i>  如何继续</h4>
+
+
+                <p>如果您想要进行现金现场交易，使用上面的表格发送交易请求。 或者可以直接联系交易者。
+                    
+                        不需要携带任何设备，只需带上现金，并在交易完成后从卖家获取交易验证代码。 比特币将存入您在 LocalBitcoins.com 的钱包。
+                    
+                </p>
+            </div>
+        </div>
+    
+
+    
+
+    
+
+    <div class="col-md-4">
+        <div id="ad-tips" class="well">
+            <h4><i class="fa fa-info-circle"></i> 小技巧</h4>
+            <ul>
+                <li>阅读交易广告及其中的条款。</li>
+                <li>如果现场做现金交易，请提议一个见面的地点以及时间。</li>
+                <li>当心骗子！检查该用户收到的评价，并对新近创建的账户多加留意。</li>
+                <li>请注意，四舍五入和价格的波动可能会影响最终成交的比特币数额。您输入的固定数额决定最后数额，比特币金额将在请求发布的同一时间由即时的汇率算出。</li>
+            </ul>
+        </div>
+    </div>
+</div>
+

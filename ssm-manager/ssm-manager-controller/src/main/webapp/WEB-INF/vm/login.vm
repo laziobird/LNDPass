@@ -1,0 +1,38 @@
+    <!-- Custom styles for this template -->
+    <link href="${contextPath}/css/myself/signin.css" rel="stylesheet">      
+   
+    <div class="container">
+
+      <form class="form-signin" action="/login" method="post">
+      
+		#if($err)      
+		<div class="alert alert-success alert-dismissible" role="alert">
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		  <strong>$err</strong>
+		</div>      
+		#end
+		
+        <h2 class="form-signin-heading">请登录</h2>
+        <label for="inputEmail" class="sr-only">用户名</label>
+        <input type="text" id="userName" name="userName" class="form-control" placeholder="User Name" required autofocus>
+        <label for="inputPassword" class="sr-only">密码</label>
+        <input type="password" id="passWord" name="passWord" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+      </form>
+      
+      <br>
+      <br>
+      <br>
+      <br>
+
+    </div> <!-- /container -->   
+
+
+  
+
+

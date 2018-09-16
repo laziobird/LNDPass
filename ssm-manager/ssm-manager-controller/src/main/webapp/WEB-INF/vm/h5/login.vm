@@ -1,0 +1,150 @@
+   
+    
+	#if($!session.getAttribute("uname")) 
+	    #set($layout="app_layout.vm")	
+		<div class="content">
+		  <div class="buttons-tab">
+		    <a href="#tab1" class="tab-link active button">余额</a>
+		    <a href="#tab2" class="tab-link button">节点</a>
+		    <a href="#tab3" class="tab-link button">通道</a>
+		  </div>
+		  <div class="content-block">
+		    <div class="tabs">
+		      <div id="tab1" class="tab active">
+		        <div class="content-block">
+		          <p>BTC:${balance}</p>
+		        </div>
+		        
+		          <div class="content-block-title">收款比特币地址</div>
+		     		          		          	          
+		          #foreach($one in $!alladdress) 
+		          <div class="card">
+    				<div class="card-content">
+      					<div class="card-content-inner">${one}</div>
+    				</div>
+  				  </div>
+		          #end			          	       		        
+		      </div>
+		      
+		      
+		      
+		      
+		      
+		      <div id="tab2" class="tab">
+
+			  <div class="content-block-title">PaaS 服务器节点</div>
+			  <div class="list-block">
+			    <ul>
+			      <li class="item-content">
+			        <div class="item-media"><i class="icon icon-f7"></i></div>
+			        <div class="item-inner">
+			          <div class="item-title">节点</div>
+			          <div class="item-after">${nodes.get("PAASNode").get("id")}</div>
+			        </div>
+			      </li>
+			      <li class="item-content">
+			        <div class="item-media"><i class="icon icon-f7"></i></div>
+			        <div class="item-inner">
+			          <div class="item-title">端口</div>
+			          <div class="item-after">${nodes.get("PAASNode").get("port")}</div>
+			        </div>
+			      </li>
+			      
+			      <li class="item-content">
+			        <div class="item-media"><i class="icon icon-f7"></i></div>
+			        <div class="item-inner">
+			          <div class="item-title">version</div>
+			          <div class="item-after">${nodes.get("PAASNode").get("version")}</div>
+			        </div>
+			      </li>			      
+			      
+			    </ul>
+			  </div>		        
+		        
+		        
+			  <div class="content-block-title">PaaS Client节点</div>
+			  <div class="list-block">
+			    <ul>
+			      <li class="item-content">
+			        <div class="item-media"><i class="icon icon-f7"></i></div>
+			        <div class="item-inner">
+			          <div class="item-title">节点</div>
+			          <div class="item-after">${nodes.get("WalletNode").get("id")}</div>
+			        </div>
+			      </li>
+			      <li class="item-content">
+			        <div class="item-media"><i class="icon icon-f7"></i></div>
+			        <div class="item-inner">
+			          <div class="item-title">端口</div>
+			          <div class="item-after">${nodes.get("WalletNode").get("port")}</div>
+			        </div>
+			      </li>
+			      
+			      <li class="item-content">
+			        <div class="item-media"><i class="icon icon-f7"></i></div>
+			        <div class="item-inner">
+			          <div class="item-title">version</div>
+			          <div class="item-after">${nodes.get("PAASNode").get("version")}</div>
+			        </div>
+			      </li>			      
+			      
+			    </ul>
+			  </div>				        
+		        
+		                  
+		      </div>
+		      
+		      <div id="tab3" class="tab">
+		        <div class="content-block">
+		          <p>This is tab 3 content</p>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>	
+	
+	#else	
+ 		#set($layout="empty_layout.vm")	
+	    <!-- Custom styles for this template -->
+	    <link href="${contextPath}/css/myself/signin.css" rel="stylesheet">      
+	   
+	    <div class="container">
+	
+	      <form class="form-signin" action="/h5/login" method="post">
+	      
+			#if($err)      
+			<div class="alert alert-success alert-dismissible" role="alert">
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  <strong>$err</strong>
+			</div>      
+			#end
+			
+	        <h2 class="form-signin-heading">请登录</h2>
+	        <label for="inputEmail" class="sr-only">用户名</label>
+	        <input type="text" id="userName" name="userName" class="form-control" placeholder="User Name" required autofocus>
+	        <label for="inputPassword" class="sr-only">密码</label>
+	        <input type="password" id="passWord" name="passWord" class="form-control" placeholder="Password" required>
+	        <div class="checkbox">
+	          <label>
+	            <input type="checkbox" value="remember-me"> Remember me
+	          </label>
+	        </div>
+	        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+	      </form>
+	      
+	      <br>
+	      <br>
+	      <br>
+	      <br>
+	
+	    </div> <!-- /container -->   	
+	#end   
+    
+    
+    
+
+
+
+  
+
+

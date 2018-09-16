@@ -1,0 +1,82 @@
+#set($layout="otclayout.vm")	
+
+<div class="container">
+
+    
+
+    
+
+
+
+
+
+
+
+<meta name="description" content="如何快速和安全地购买您的第一份比特币？">
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="center-align howto-mobile-heading">
+  <i class="fa fa-5x fa-btc"></i>
+<h1 class="center-align bold-heading">如何购买比特币</h1>
+</div>
+<br>
+
+<div class="guides-list">
+  <div class="howtobuy-step">
+    <h4 class="bold-heading center-align">第 1 步。注册</h4>在 www.birdboy.cn 上<a href="/register/" target="_blank">注册</a>一个帐户。您将获得一个免费的在线比特币钱包。不需要安装任何应用即可使用。如果您已经拥有帐户，请跳到下一步。
+    
+  </div>
+
+  <div class="howtobuy-step">
+    <h4 class="bold-heading center-align">第 2 步。搜索广告</h4>转到<a href="/zh-cn/" target="_blank">主页</a>，在表格的搜索框中填写想要用您的币种购买的金额、您的地点，然后选择支付方式。如果您不确定要如何付款，可以选择“所有在线报价”作为支付方式。网站将列出您所在区域的比特币交易者。
+    <div>
+    <a href="https://localbitcoins.com/cached-static/img/guides/how-to-buy-guide_002_thumb.6c5f9f0d12fc.png" ><img class="img-responsive center-block img-thumbnail howtobuy-img howtobuy-img-desktop" src="https://localbitcoins.com/cached-static/img/guides/how-to-buy-guide_002_thumb.6c5f9f0d12fc.png"></a>
+    <img class="img-responsive center-block img-thumbnail howtobuy-img howtobuy-img-mobile" src="https://localbitcoins.com/cached-static/img/guides/how-to-buy-guide_002_mobile.0773306da1cb.png">
+    </div>
+  </div>
+
+  <div class="howtobuy-step">
+    <h4 class="bold-heading center-align">第 3 步。选择广告</h4>从广告列表中，选择一个拥有良好信誉和大量交易记录的交易者。响应时间指示器会显示交易者回复时间是在 5 分钟之内（绿色）、30 分钟之内（黄色）还是超过 30 分钟（灰色）。您可以单击“购买”按钮查看有关广告的更多信息。
+    <div>
+    <a href="https://localbitcoins.com/cached-static/img/guides/how-to-buy-guide_003.a78b04275c7b.png" ><img class="img-responsive center-block img-thumbnail howtobuy-img howtobuy-img-desktop" src="https://localbitcoins.com/cached-static/img/guides/how-to-buy-guide_003_thumb.5d64df475b46.png"></a>
+    <img class="img-responsive center-block img-thumbnail howtobuy-img howtobuy-img-mobile" src="https://localbitcoins.com/cached-static/img/guides/how-to-buy-guide_003_mobile.cc722f100dfc.png">
+    </div>
+  </div>
+
+  <div class="howtobuy-step">
+    <h4 class="bold-heading center-align">第 4 步。向卖家付款</h4>按“购买”按钮后，您会看到更多有关广告的信息，包括交易条款。请在提交交易请求前仔细阅读这些信息，如果您不同意，可以返回至上一页面，选择另一个广告。<br> <strong>要开始交易，</strong>请在蓝色框中键入想要购买的数量，给卖家输入一条消息，然后单击<i>发送交易请求</i>按钮开始交易。<strong>单击按钮时，确保已经准备付款</strong>，如果您未在付款窗口过期前付款，交易将会自动取消。
+    <div>
+    <a href="https://localbitcoins.com/cached-static/img/guides/how-to-buy-guide_004.68a58f0b69de.png" ><img class="img-responsive center-block img-thumbnail howtobuy-img howtobuy-img-desktop" src="https://localbitcoins.com/cached-static/img/guides/how-to-buy-guide_004_thumb.f73e0f76c088.png"></a>
+    <img class="img-responsive center-block img-thumbnail howtobuy-img howtobuy-img-mobile" src="https://localbitcoins.com/cached-static/img/guides/how-to-buy-guide_004_mobile.dfbcb798ff13.png">
+    </div>
+  </div>
+
+  <div class="howtobuy-step">
+    <h4 class="bold-heading center-align">第 5 步。标记付款完成</h4>付款后，单击<i>我已付款</i>按钮。交易者验证已经收到您的付款后，比特币将从托管放行，立刻出现在您的 <a href="/accounts/wallet/">LocalBitcoins 钱包</a>中。 <br>就是这样，恭喜您完成了第一次比特币交易！
+    <div>
+    <a href="https://localbitcoins.com/cached-static/img/guides/how-to-buy-guide_005.a955f5c84a9b.png" ><img class="img-responsive center-block img-thumbnail howtobuy-img howtobuy-img-desktop" src="https://localbitcoins.com/cached-static/img/guides/how-to-buy-guide_005_thumb.02da6b11802a.png"></a>
+    <img class="img-responsive center-block img-thumbnail howtobuy-img howtobuy-img-mobile" src="https://localbitcoins.com/cached-static/img/guides/how-to-buy-guide_005_mobile.7e22b503161d.png">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>

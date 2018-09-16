@@ -1,0 +1,119 @@
+      
+	    #set($layout="wx_layout.vm")	
+		<div class="content">
+		  <div class="buttons-tab">
+		    <a href="#tab1" class="tab-link active button">离岸汇率</a>
+		    <a href="#tab2" class="tab-link button">各大银行</a>
+		  </div>
+		  <div class="content-block">
+		    <div class="tabs">
+
+		      <div id="tab1" class="tab active">
+				  
+				  <div class="content-block-title">Investing.com(全球排名第五的财经金融门户网)</div>				  		        				  
+				  <div class="list-block">
+				    <ul>
+				      <li class="item-content">
+				        <div class="item-media"><i class="icon icon-f7"></i></div>
+				        <div class="item-inner">
+				          <div class="item-title">汇率</div>
+				          <div class="item-after" style="color:red">$!{usdList.investPrice}</div>
+				        </div>
+				      </li>
+				      <li class="item-content">
+				        <div class="item-media"><i class="icon icon-f7"></i></div>
+				        <div class="item-inner">
+				          <div class="item-title">增幅</div>
+				          <div class="item-after">$!{usdList.investChaJia}</div>
+				        </div>
+				      </li>
+				      
+				      
+				      <li class="item-content">
+				        <div class="item-media"><i class="icon icon-f7"></i></div>
+				        <div class="item-inner">
+				          <div class="item-title">差比</div>
+				          <div class="item-after">$!{usdList.investChaBi}</div>
+				        </div>
+				      </li>				      
+				      
+				      <li class="item-content">
+				        <div class="item-media"><i class="icon icon-f7"></i></div>
+				        <div class="item-inner">
+				          <div class="item-title">昨日</div>
+				          <div class="item-after">$!{usdList.investZuoTian}</div>
+				        </div>
+				      </li>	
+				      
+				      <li class="item-content">
+				        <div class="item-media"><i class="icon icon-f7"></i></div>
+				        <div class="item-inner">
+				          <div class="item-title">最高价</div>
+				          <div class="item-after">$!{usdList.investHigh}</div>
+				        </div>
+				      </li>					      
+				      
+				      <li class="item-content">
+				        <div class="item-media"><i class="icon icon-f7"></i></div>
+				        <div class="item-inner">
+				          <div class="item-title">最低价</div>
+				          <div class="item-after">$!{usdList.investLow}</div>
+				        </div>
+				      </li>						      
+				      
+				    </ul>
+				  </div>
+				  		        
+     
+		      </div>    
+		      
+		      <div id="tab2" class="tab">
+				<div class="content-block-title" style="margin:0 0 0 ">每一种外币都公布4种牌价，即现汇买入价 </div>
+				<div class="content-block-title" style="margin:0 0 0 ">现汇卖出价、现钞买入价、现钞卖出价。 </div>
+				<div class="content-block-title" style="margin:0 0 0 ">卖出价是银行将外币卖给客户的牌价</div>	
+				<div class="content-block-title" style="margin:0 0 0 ">也就是客户到银行购汇时的牌价；</div>	
+				<div class="content-block-title" style="margin:0 0 0 ">而买入价则是银行向客户买入外汇或外币时的牌价</div>	
+				<div class="content-block-title" style="margin:0 0 0 ">它分为现钞买入价和现汇买入价两种。</div>	
+				<div class="content-block-title" style="margin:0 0 0 ">现汇买入价是银行买入现汇时的牌价</div>
+				<div class="content-block-title" style="margin:0 0 0 ">而现钞买入价则是银行买入外币现钞时的牌价。</div>							      
+		        <div class="list-block">
+				    <ul>
+				      <li class="item-content">
+				        <div class="item-media"><i class="icon icon-f7"></i></div>
+				        <div class="item-inner">
+				          <div class="item-title">购买汇率-香港汇丰</div>
+				          <div class="item-after" style="color:red">$!{usdList.hbscBuy}</div>
+				        </div>
+				      </li>
+				      <li class="item-content">
+				        <div class="item-media"><i class="icon icon-f7"></i></div>
+				        <div class="item-inner">
+				          <div class="item-title">出售汇率-香港汇丰</div>
+				          <div class="item-after">$!{usdList.hbscSell}</div>
+				        </div>
+				      </li>	
+				      
+				      
+				      <li class="item-content">
+				        <div class="item-media"><i class="icon icon-f7"></i></div>
+				        <div class="item-inner">
+				          <div class="item-title">购买汇率-中国银行</div>
+				          <div class="item-after" style="color:red">$!{usdList.bankofchinaSell}</div>
+				        </div>
+				      </li>
+				      
+				      
+				      
+				      
+				      		     			      
+				    </ul>
+				    		      
+		        </div>
+		      </div>		      
+		      
+		      
+		     
+		    </div>
+		  </div>
+		</div>	
+	

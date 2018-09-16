@@ -1,0 +1,40 @@
+
+	  <style type="text/css"> 
+	  
+	    body {
+		  padding-top: 70px;
+		  padding-bottom: 30px;
+		}
+		
+		.theme-dropdown .dropdown-menu {
+		  position: static;
+		  display: block;
+		  margin-bottom: 20px;
+		}
+		
+		.theme-showcase > p > .btn {
+		  margin: 5px 0;
+		}
+		
+		.theme-showcase .navbar .container {
+		  width: auto;
+		}  
+	  
+	  </style>
+	  
+     <!-- Bootstrap theme -->
+     <link href="${contextPath}/css/bootstrap-theme.min.css" rel="stylesheet">	  
+	  
+    <div class="container theme-showcase" role="main">
+	      <div class="jumbotron">
+	        <h1>作者介绍</h1>
+	        <h2>蒋志伟</h2>
+	        <p>北京交通大学计算机硕士。先后就职于阿里、Qunar、美团。美团移动架构师、Qunar技术专家，早期技术核心。负责多个上亿系统核心底层研发，资深底层区块链研究。连续创业：约运动CEO，耀莱在线技术总监。</p>
+	      </div>
+	      
+	      
+	      
+      
+     </div> 
+
+

@@ -1,0 +1,27 @@
+#set($layout="app_layout.vm")	
+
+<div class="content">
+
+  <div class="content-block-title">闪电商店-咖啡</div>
+  <div class="card demo-card-header-pic">
+    <div valign="bottom" class="card-header color-white no-border no-padding">
+      <img class='card-cover' src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525760016366&di=5542236b6c41007a45ed8888d3fe4829&imgtype=0&src=http%3A%2F%2Fimg2.3lian.com%2F2014%2Ff4%2F112%2Fd%2F3.jpg" alt="">
+    </div>
+    <div class="card-content">
+      <div class="card-content-inner">
+        <p class="color-gray">发表于 2018/05/10</p>
+        <p>售价10000msatoshi/杯,1BTC=100 000 000 msatoshi,马上体验实时支付比特币快感吧！</p>
+      </div>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="link">赞</a>
+      <a href="/h5/pay" class="link">购买</a>
+    </div>
+  </div>
+
+</div>
+
+
+
+	    
+

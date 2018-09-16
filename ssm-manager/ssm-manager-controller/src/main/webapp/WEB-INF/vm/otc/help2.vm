@@ -1,0 +1,41 @@
+#set($layout="otclayout.vm")	
+<div class="container">
+
+    
+
+    
+<div class="guides-list-heading">
+<i class="fa fa-5x fa-file-text"></i>
+<h1>LocalBitcoins.com的指南</h1>
+利用我们的指南熟悉网站的功能
+</div>
+<div class="guides-list">
+  <div class="btn btn-default guides-list-item">
+    <a href="/guides/how-to-buy-bitcoins"><h2>如何购买比特币</h2></a>
+    您是比特币的新用户吗？本指南将为您提供比特币使用入门
+  </div>
+  <div class="btn btn-default guides-list-item">
+    <a href="/guides/how-to-sell-bitcoins"><h2>如何出售比特币</h2></a>
+    如何快速、安全地出售您的比特币
+  </div>
+  <div class="btn btn-default guides-list-item">
+    <a href="/guides/security"><h2>安全指南</h2></a>
+    有关保护您和您的资金安全的指南
+  </div>
+  <div class="btn btn-default guides-list-item">
+    <a href="/guides/how-to-sell-bitcoins-online"><h2>在线交易比特币简介</h2></a>
+    在 www.birdboy.cn 上在线交易比特币的说明指南
+  </div>
+  <div class="btn btn-default guides-list-item">
+    <a href="/guides/cash-exchange-howto"><h2>在本地交易比特币的提示</h2></a>
+    如何在本地用现金出售比特币的简单指南
+  </div>
+  <div class="btn btn-default guides-list-item">
+    <a href="/guides/accept-bitcoins-merchant"><h2>在您的网络商店中接受比特币</h2></a>
+    如何使用 API 在您的网络商店中接受比特币。
+  </div>
+</div>
+
+
+
+</div>
